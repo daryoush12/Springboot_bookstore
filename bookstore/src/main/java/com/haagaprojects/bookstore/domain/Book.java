@@ -1,10 +1,10 @@
 package com.haagaprojects.bookstore.domain;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import org.springframework.boot.*;
 
 @Entity
 public class Book {
@@ -30,7 +30,7 @@ public class Book {
 	}
 
 	public void setAuthor(String author) {
-		author = author;
+		this.author = author;
 	}
 
 	public long getYear() {
@@ -56,8 +56,6 @@ public class Book {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-
-	
 
 	public long getId() {
 		return id;
