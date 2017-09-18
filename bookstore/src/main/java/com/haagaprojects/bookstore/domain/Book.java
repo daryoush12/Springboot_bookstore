@@ -77,4 +77,15 @@ public class Book {
 				+ "]";
 	}
 
+	public Book(Long id ,String title, String author, long year, String isbn,
+			double price) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.author = author;
+		this.year = year;
+		this.isbn = isbn;
+		this.price = price;
+	}
+
 }
