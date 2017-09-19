@@ -17,13 +17,13 @@ public class RestBookController {
 	@Autowired
 	private BookRepository Brepository;
 	
-	// RESTful service to get all students
+	// RESTful service to get all books
     @RequestMapping(value="/api/books", method = RequestMethod.GET)
     public @ResponseBody List<Book> BookListRest() {	
         return (List<Book>) Brepository.findAll();
     }    
 
-	// RESTful service to get student by id
+	// RESTful service to get book by id
     @RequestMapping(value="/api/book/{id}", method = RequestMethod.GET)
     public @ResponseBody Book findBooktRest(@PathVariable("id") Long Bookid) {;
     	System.out.println(Bookid);

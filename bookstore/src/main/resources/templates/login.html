@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <title>Billy's BookStore</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Billy's BookStore Login Page</h1>
+<div th:if="${param.error}">Invalid username and password.</div>
+<form th:action="@{login}" action ="#" method="post">
+<label for="username">Username</label>
+<input type ="text" id="username" name="username"/>
+<br></br>
+<label for="username">Password</label>
+<input type ="password" id="password" name="password"/>
+<br></br>
+<input type ="submit" value="Sign in"/>
+</form>
+<br></br>
+</body>
+</html>
