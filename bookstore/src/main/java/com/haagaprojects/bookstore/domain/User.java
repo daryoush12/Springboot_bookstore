@@ -16,7 +16,7 @@ public class User {
 private long id;
 
 
-@Column(name ="username",nullable = false)
+@Column(name ="username",nullable = false, unique = true)
 private String username;
 
 @Column(name ="password",nullable = false)
@@ -65,8 +65,6 @@ public User(String username, String passwordHash, String role) {
 }
 
 public User() {
-	super();
-	// TODO Auto-generated constructor stub
 }
 
 

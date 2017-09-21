@@ -21,8 +21,8 @@ public class BookstoreApplication {
 	public CommandLineRunner UserToAdded(UserRepository urepository) {
 		return (args) -> {
 			log.info("DATABASE ACTION: Adding test users:");
-			User user1 = new User("user","$2a$06$3jYRJrg0ghaaypjZ/.g4SethoeA51ph3UD4kZi9oPkeMTpjKU5","USER");
-			User user2 = new User("admin","$2a$10$0MMwY.IQqpsVc1jC8u7IJ.2rT8b0Cd3b3sfIBGV2zfgnPGtT4r","ADMIN");
+			User user1 = new User("user","$2a$04$5I5PlB8atlxa19Nx0Xng2.jkQAbO4tVrJc1pn6rdh7UR2wgzETawC","USER");
+			User user2 = new User("admin","$2a$04$5I5PlB8atlxa19Nx0Xng2.jkQAbO4tVrJc1pn6rdh7UR2wgzETawC","ADMIN");
 			urepository.save(user1);
 			urepository.save(user2);
 			};
